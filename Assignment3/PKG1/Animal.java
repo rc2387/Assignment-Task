@@ -12,17 +12,21 @@ package Assignment3.PKG1;
         //Creating methods
 
         public void eat () {
+
             System.out.println("Animal can eat");
         }
 
         private void gender () {
+
             System.out.println("Animal have gender category");
         }
 
         protected void walk () {
+
             System.out.println("Animal can Walk");
         }
         void getdetails () {
+
             System.out.println("The details of Animal");
         }
 

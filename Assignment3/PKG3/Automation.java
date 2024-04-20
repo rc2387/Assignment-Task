@@ -1,4 +1,4 @@
-package PKG3;
+package Assignment3.PKG3;
 
 public class Automation {
     public static void main(String[] args) {

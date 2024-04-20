@@ -1,4 +1,4 @@
-package Assignment3.PKG1.PKG2;
+package Assignment3.PKG2;
 
 import Assignment3.PKG1.Animal;
 
