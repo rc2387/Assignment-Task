@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="E2EEvershopTest">
+    <test name="Login">
+        <parameter name="Username" value="rchoudhary1187@gmail.com">
+        </parameter>
+        <parameter name="Password" value="Newuser2387">
+        </parameter>
+        <parameter name="ProductCty" value="1">
+        </parameter>
+        <parameter name="Product" value="2">
+        </parameter>
+        <parameter name="QTY" value="2">
+        </parameter>
+        <parameter name="ProdSize" value="5">
+        </parameter>
+        <parameter name="ProdCol" value="8">
+        </parameter>
+        <classes>
+            <class name="Assignment5TestNG.LoginClickAddItemToCart">
+                <methods>
+                    <include name="LoginSetupAddToCart">
+                    </include>
+                    <include name="AddItemToCart">
+                    </include>
+                </methods>
+            </class>
+            <class name="Assignment5TestNG.LoginShopKidsItemAddToCart">
+                <methods>
+                    <parameter name="Username_1" value="rchoudhary1187@gmail.com">
+                    </parameter>
+                    <parameter name="Password_1" value="Newuser2387">
+                    </parameter>
+                    <parameter name="P_HomePage" value="1">
+                    </parameter>
+                    <parameter name="P_ShopCat" value="1">
+                    </parameter>
+                    <parameter name="P_kidsColChk" value="1">
+                    </parameter>
+                    <parameter name="P_PkidsSizeChk" value="6">
+                    </parameter>
+                    <parameter name="P_PkidsItems" value="1">
+                    </parameter>
+                    <parameter name="P_PkidsQty" value="2">
+                    </parameter>
+                    <parameter name="P_PkidsSize" value="6">
+                    </parameter>
+                    <parameter name="P_PkidsCol" value="8">
+                    </parameter>
+                    <include name="LoginSetupShopKids">
+                    </include>
+                    <include name="ShopKidsItemsToCart">
+                    </include>
+                </methods>
+            </class>
+            <class name="Assignment5TestNG.LoginAccountPageLogout">
+                <methods>
+                    <parameter name="Username_2" value="rchoudhary1187@gmail.com">
+                    </parameter>
+                    <parameter name="Password_2" value="Newuser2387">
+                    </parameter>
+                    <include name="AcctPageLogout">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
